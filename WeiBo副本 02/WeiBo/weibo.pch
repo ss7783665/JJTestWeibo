@@ -1,0 +1,37 @@
+//
+//  weibo.pch
+//  WeiBo
+//
+//  Created by 王京 on 15/7/27.
+//  Copyright (c) 2015年 wj. All rights reserved.
+//
+
+#ifndef WeiBo_weibo_pch
+#define WeiBo_weibo_pch
+
+
+
+#import "UIView+XYWiHe.h"             //UIview分类,设置frame尺寸
+#import "UIBarButtonItem+Extention.h"//分类方法,
+#import "UIView+Inspectable.h"      //xib设置圆角边框颜色分类方法
+
+/**
+ *  @param r 0-255
+ *  @param g 0-255
+ *  @param b 0-255
+ *  @param a 0-1
+ *  @return UIColor
+ */
+#define kRGB(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
+
+#define KiOS8 [[UIDevice currentDevice].systemVersion floatValue] >= 8.0
+//屏幕的宽高
+#define SCREENW [UIScreen mainScreen].bounds.size.width
+#define SCREENH [UIScreen mainScreen].bounds.size.height
+
+
+
+
+
+
+#endif
